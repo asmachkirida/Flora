@@ -1,0 +1,148 @@
+*{
+    margin :0;
+    padding:0;
+    font-family: 'Roberto', sans-serif;
+  }
+  .Container{
+    width: 100%;
+    height: 100vh;
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(Pictures/BD3.jpg);
+    background-position: center;
+    background-size: cover;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+    
+  }
+  .navbar{
+
+    height: 12%;
+    display: flex;
+    align-items: center;
+  }
+ 
+  nav{
+    flex: 1;
+    text-align: right;
+    margin-top: 40px;
+  }
+  nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 60px;
+  }
+  nav ul li a{
+    text-decoration: none;
+    color: azure;
+    font-size: 20px;
+    position: relative;
+  }
+  a::before{
+  position: absolute;
+  content: "";
+  left: 0;
+  height: 3px;
+  width: 0%;
+  background-color: #9D8189;
+  bottom: -7px;
+  transition: 0.3s;
+  }
+  
+  nav a:hover{
+    color: #9D8189;
+  }
+  nav a:hover::before{
+width: 100px;
+  }
+  .row{
+    display: flex;
+    height: 88%;
+    align-items: center;
+  }
+  .col{
+    flex-basis: 50%;
+  }
+  video{
+    width: 270px;
+    height: 510px;
+    margin-left: 30%;
+    margin-top: -50px;
+    border-radius: 50px; 
+    overflow: hidden; 
+   border: 2px solid  black;
+
+  }
+
+  #textC{
+    background-color: black;
+    width: 500px;
+    height:500px ;
+    margin-left: -120px;
+    margin-top: -50px;
+    opacity: .7;
+    border-radius: 35px;
+    border:3px solid  #9D8189;
+  }
+  footer{
+    background-color:black ;
+    height: 6%;
+    width: 100vw;
+    position: absolute;
+    color: azure;
+   margin-bottom: 0;
+   margin-top: -44px;
+    
+  }
+  #copyR{
+    text-align: center;
+    margin-top: 1%;
+    font-size: x-small;
+  }
+  #F{
+    text-align: center;
+    font-size: 2em;
+    letter-spacing: 6px;
+    font-weight: bolder;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: azure;
+    margin-top: 8%;
+    margin-bottom: 2%;
+  }
+  #Lo{
+    text-align: left;
+    
+    letter-spacing: 3px;
+    font-weight: bolder;
+    font-family:Trebuchet MS, sans-serif;
+    color: azure;
+    opacity: 1;
+    margin-left: 8%;
+    margin-right: 8%;
+    font-size: 0.9em;
+     }
+  .List{
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+    list-style: none;
+    margin-bottom: 10px;
+    }
+    .List li {
+    margin: 0 10px;
+    width: 40px;
+    
+    }
+    .List a {
+        color: azure;
+        
+      
+        }
+    .List a:Hover i{
+        color: #9D8189;
+    }
+  
+   .Socials a{
+font-size: 40px;
+   }
+
+   

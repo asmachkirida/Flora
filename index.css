@@ -1,0 +1,215 @@
+body{
+    background-color: #F7FFF7;
+}
+#parent{
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+#Main {
+    position: absolute;
+    background-size: 50%;
+    width:50%;
+    margin-left: 42%;
+    margin-top: 1%;
+    border-radius: 30px;
+  }
+#child {
+    position: absolute;
+    border-radius: 10px;
+    background-color: #EDEDE9;
+    width: 500px;
+    height: 570px;
+    margin-left: 14%;
+    margin-top: 2.5%;
+    opacity: .85;
+    overflow: hidden;
+  }
+  #child::before 
+{
+	content: '';
+	z-index: 1;
+	position: absolute;
+	top: -50%;
+	left: -50%;
+	width: 380px;
+	height: 420px;
+	transform-origin: bottom right;
+	background: linear-gradient(0deg,transparent,#386641,#386641);
+	animation: animate 6s linear infinite;
+}
+#child::after 
+{
+	content: '';
+	z-index: 1;
+	position: absolute;
+	top: -50%;
+	left: -50%;
+	width: 380px;
+	height: 420px;
+	transform-origin: bottom right;
+	background: linear-gradient(0deg,transparent,#386641,#386641);
+	animation: animate 6s linear infinite;
+	animation-delay: -3s;
+}
+@keyframes animate 
+{
+	0%
+	{
+		transform: rotate(0deg);
+	}
+	100%
+	{
+		transform: rotate(360deg);
+	}
+}
+.form 
+{
+	position: absolute;
+	inset: 5px;
+	background: #EDEDE9;
+	padding: 50px 40px;
+	border-radius: 8px;
+	z-index: 2;
+	display: flex;
+	flex-direction: column;
+}
+h1
+{
+	color: #386641;
+	font-weight: bold;
+	text-align: center;
+	letter-spacing: 0.1em;
+   
+}
+
+
+.Informations{
+    width: 350px;
+    height: 22px;
+    border-radius: 20px;
+    border:3px solid black;
+    border-bottom: 3px solid #386641;
+    border-right:3px solid #386641 ;
+    margin-top: 10px; 
+    font-weight: bold;
+    font-size: 0.75em;
+    color: black;
+    
+    
+    
+}
+
+.btn{
+    background-color:#386641 ;
+    text-align: center;
+    color: azure;
+    font-weight: bold;
+    margin-top: 15px;
+    width: 350px;
+    height: 35px;
+}
+.btn:hover{
+    background-color:#588157 ;
+}
+footer{
+    position: absolute;
+    bottom: 0;
+    background-color:#588157 ;
+    height: 10%;
+    width: 99.5vw;
+    color: azure;
+}
+.List{
+display: flex;
+justify-content: center;
+margin: 1rem 0 3rem 0;
+list-style: none;
+margin-bottom: 10px;
+}
+.List li {
+margin: 0 10px;
+}
+.List a {
+    color: azure;
+    }
+.List a:Hover i{
+    color: #EDEDE9;
+}
+#copyR{
+    text-align: center;
+    margin-top: 0%;
+    font-size: x-small;
+}
+span{
+position: absolute;
+right: 15px;
+top:50%;
+transform: translate(50%,-50%);
+
+}
+.eye{
+    position: relative;
+    margin-left: -15px;
+
+}
+#Error{
+    text-align: left;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+    font-size:x-small;
+    color: crimson;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+:root {
+    --error-color: #dc3545;
+    --success-color: #28a745;
+    --warning-color: #ffc107;
+}
+
+
+
+
+
+.form-field {
+    margin-bottom: 5px;
+
+}
+
+.form-field label {
+    display: block;
+    color: #777;
+    margin-bottom: 5px;
+}
+
+
+
+.form-field input:focus {
+    outline: none;
+}
+
+.form-field.error input {
+    border-color: var(--error-color);
+}
+
+.form-field.success input {
+    border-color: var(--success-color);
+}
+
+
+.form-field small {
+    color: var(--error-color);
+}
+label{
+    text-align: center;
+    font-weight: bold;
+    color: black;
+}
+form i {
+    margin-left: -30px;
+    cursor: pointer;
+}
+

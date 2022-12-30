@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flora</title>
+    <link rel="shortcut icon" type="image" href="Pictures/Title.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+<body>
+
+    <div id="parent">
+    <img src="Pictures/Main.jpg" alt="Main Picture" id="Main">
+    <div id="child"> 
+        <form id="signup" class="form">
+            <h1>Sign Up</h1>
+            <div class="form-field">
+                <label for="username">Username:</label>
+                <input type="text" name="username" id="username" autocomplete="off" placeholder="Choose a username" class="Informations" onkeypress="return AvoidSpace(event);">
+                <small></small>
+            </div>
+
+            <div class="form-field">
+                <label for="Email">Email:</label>
+                <input type="text" name="email" id="email" autocomplete="off" placeholder="Enter your email" class="Informations" onkeypress="return AvoidSpace(event);">
+                <small></small>
+            </div>
+
+                <div class="form-field">
+                <label for="password">Password:</label>
+                <input type="password" name="password" id="password" autocomplete="off"
+                    placeholder="Enter a strong password" class="Informations"
+                     onkeypress="return AvoidSpace(event);">
+                    <i class="bi bi-eye-slash" id="togglePassword"></i>
+                <small></small>
+                </div>
+
+            <div class="form-field">
+                <label for="username">Confirm Password:</label>
+                <input type="password" name="confirm-password" id="confirm-password" autocomplete="off"
+                    placeholder="Reenter your password" class="Informations" onkeypress="return AvoidSpace(event);">
+                    <i class="bi bi-eye-slash" id="togglePassword1"></i>
+                <small></small>
+            </div>
+            <div class="form-field">
+                <a href="Index.html"><input type="submit" value="Sign Up" class="btn"></a>
+            </div>
+        </form>
+    </div>  
+    </div> 
+    <footer>
+        <div class="Socials">
+        <ul class="List">
+            <li><a href="https://ma.linkedin.com/in/asma-chkirida-070332200" target="_blank"><i class="fa fa-linkedin-square"></i></a> </li>
+            <li> <a href="https://www.instagram.com/asoumty02/" target="_blank"><i class="fa fa-instagram"></i></a> </li>
+            <li> <a href="https://github.com/asmachkirida" target="_blank"><i class="fa fa-github" id="Flower"></i></a> </li>
+        </ul>
+        </div>
+        <div id="copyR">
+         <p> Designed by : Asma CHKIRIDA &copy; 2022-2023</p>
+        </div>
+    </footer>
+  <script src="index.js"></script>
+</body>
+</html>
